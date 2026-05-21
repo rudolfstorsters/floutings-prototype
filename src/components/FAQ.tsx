@@ -87,7 +87,7 @@ export default function FAQ() {
               <span className={`text-lg leading-none ${firstVisitOpen ? "text-white" : "text-teal"}`}>+</span>
             </span>
           </button>
-          <div className={`overflow-hidden transition-all duration-400 ${firstVisitOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
+          <div className={`overflow-hidden transition-all duration-400 ${firstVisitOpen ? "max-h-200 opacity-100" : "max-h-0 opacity-0"}`}>
             <div className="px-6 pb-6 border-t border-[#4a7c7c]/10">
               <p className="text-sm text-[#5a5a5a] font-light mt-4 mb-5 leading-relaxed">{t("fv.intro")}</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

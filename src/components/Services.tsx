@@ -21,11 +21,11 @@ const romanticPackages: Pkg[] = [
 ];
 
 const individualPackages: Pkg[] = [
-  { durationKey: "services.pkg.1h", visitsKey: "services.pkg.1v",  price: "50 €",  oldPrice: "39 €",  noteKey: "services.pkg.note.1v1h",  highlight: false },
+  { durationKey: "services.pkg.1h", visitsKey: "services.pkg.1v",  price: "39 €",  oldPrice: "50 €",  noteKey: "services.pkg.note.1v1h",  highlight: false },
   { durationKey: "services.pkg.1h", visitsKey: "services.pkg.2v",  price: "85 €",                     noteKey: "services.pkg.note.sub",    highlight: true  },
   { durationKey: "services.pkg.1h", visitsKey: "services.pkg.4v",  price: "150 €",                    noteKey: "services.pkg.note.sub1y",  highlight: false },
   { durationKey: "services.pkg.1h", visitsKey: "services.pkg.10v", price: "350 €",                    noteKey: "services.pkg.note.famsub", highlight: false },
-  { durationKey: "services.pkg.2h", visitsKey: "services.pkg.1v",  price: "70 €",  oldPrice: "55 €",  noteKey: "services.pkg.note.2v1h",  highlight: false },
+  { durationKey: "services.pkg.2h", visitsKey: "services.pkg.1v",  price: "55 €",  oldPrice: "70 €",  noteKey: "services.pkg.note.2v1h",  highlight: false },
 ];
 
 const twoPersonPackages: Pkg[] = [
