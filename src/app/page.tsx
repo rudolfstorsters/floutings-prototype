@@ -8,8 +8,10 @@ import Benefits from "@/components/Benefits";
 import Services from "@/components/Services";
 import Romantic from "@/components/Romantic";
 import Individual from "@/components/Individual";
+import Products from "@/components/Products";
 import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
+import GiftCard from "@/components/GiftCard";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import BookingForm from "@/components/BookingForm";
@@ -27,8 +29,10 @@ export default function Home() {
         <Services />
         <Romantic />
         <Individual />
+        <Products />
         <Gallery />
         <Testimonials />
+        <GiftCard />
         <FAQ />
         <Contact />
         <BookingForm />
