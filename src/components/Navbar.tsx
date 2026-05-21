@@ -36,8 +36,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-[#faf8f4]/95 backdrop-blur-md ${
-        scrolled ? "shadow-sm py-3" : "py-5"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? "bg-[#faf8f4]/95 backdrop-blur-md shadow-sm py-3"
+          : "bg-transparent py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
@@ -112,7 +114,7 @@ export default function Navbar() {
 
         {/* Mobile right: lang + phone */}
         <div className="lg:hidden flex items-center gap-3">
-          <div className="flex items-center gap-px border border-[#e0dbd0] rounded-sm overflow-hidden">
+          <div className={`flex items-center gap-px border rounded-sm overflow-hidden ${scrolled ? "border-[#e0dbd0]" : "border-white/20"}`}>
             {LANGS.map((l) => (
               <button
                 key={l.code}
@@ -120,7 +122,9 @@ export default function Navbar() {
                 className={`px-2 py-1 text-[9px] tracking-widest transition-colors ${
                   lang === l.code
                     ? "bg-teal text-white"
-                    : "text-[#4a4a4a] hover:text-teal"
+                    : scrolled
+                    ? "text-[#4a4a4a] hover:text-teal"
+                    : "text-white/70 hover:text-white"
                 }`}
               >
                 {l.label}
@@ -129,7 +133,7 @@ export default function Navbar() {
           </div>
           <a
             href="tel:+37120233733"
-            className="flex items-center gap-1 text-sm text-teal transition-colors"
+            className={`flex items-center gap-1 text-sm transition-colors ${scrolled ? "text-teal" : "text-white/80"}`}
             aria-label="Zvanīt"
           >
             <Phone size={14} />
