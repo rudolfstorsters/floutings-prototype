@@ -148,11 +148,10 @@ export default function Hero() {
       {/* Scroll indicator */}
       <button
         onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 hover:text-white/80 transition-colors"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/50 hover:text-white/80 transition-colors p-4"
         aria-label="Ritināt uz leju"
-        style={{ animation: "bounce 2s infinite" }}
       >
-        <ChevronDown size={28} />
+        <ChevronDown size={28} style={{ animation: "bounce 2s infinite" }} />
       </button>
     </section>
   );
