@@ -68,7 +68,10 @@ function PriceCard({ pkg, t }: { pkg: Pkg; t: (k: string) => string }) {
         </div>
         <div className="text-right">
           {pkg.oldPrice && (
-            <p className={`text-sm font-light line-through ${pkg.highlight ? "text-white/40" : "text-[#b0a090]"}`}>
+            <p
+              className={`text-sm font-light ${pkg.highlight ? "text-white/40" : "text-[#b0a090]"}`}
+              style={{ textDecoration: "line-through" }}
+            >
               {pkg.oldPrice}
             </p>
           )}
