@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
-const FAQ_COUNT = 10;
+const FAQ_COUNT = 30;
 
 const FIRST_VISIT_STEPS = [
   "fv.step.0","fv.step.1","fv.step.2","fv.step.3","fv.step.4","fv.step.5",
