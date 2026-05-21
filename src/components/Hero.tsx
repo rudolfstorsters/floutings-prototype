@@ -79,7 +79,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-20 sm:pt-0">
         {/* Eyebrow */}
         <p className="text-[#9bbfbf] text-xs tracking-[0.5em] uppercase mb-8 font-light">
           {t("hero.eyebrow")}
