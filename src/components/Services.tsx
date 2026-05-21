@@ -12,14 +12,6 @@ type Pkg = {
   highlight: boolean;
 };
 
-const romanticPackages: Pkg[] = [
-  { durationKey: "services.pkg.1h", visitsKey: "services.pkg.1v",  price: "70 €",  noteKey: "services.pkg.note.1v1h",  highlight: false },
-  { durationKey: "services.pkg.1h", visitsKey: "services.pkg.2v",  price: "120 €", noteKey: "services.pkg.note.sub",    highlight: true  },
-  { durationKey: "services.pkg.1h", visitsKey: "services.pkg.4v",  price: "210 €", noteKey: "services.pkg.note.sub1y",  highlight: false },
-  { durationKey: "services.pkg.1h", visitsKey: "services.pkg.10v", price: "500 €", noteKey: "services.pkg.note.bigsub", highlight: false },
-  { durationKey: "services.pkg.2h", visitsKey: "services.pkg.1v",  price: "100 €", noteKey: "services.pkg.note.2v1h",  highlight: false },
-];
-
 const individualPackages: Pkg[] = [
   { durationKey: "services.pkg.1h", visitsKey: "services.pkg.1v",  price: "39 €",  oldPrice: "50 €",  noteKey: "services.pkg.note.1v1h",  highlight: false },
   { durationKey: "services.pkg.1h", visitsKey: "services.pkg.2v",  price: "85 €",                     noteKey: "services.pkg.note.sub",    highlight: true  },
@@ -138,14 +130,6 @@ export default function Services() {
           <p className="mt-4 text-[#5a5a5a] font-light">
             {t("services.subtitle")}
           </p>
-        </div>
-
-        {/* Romantic couple */}
-        <div className="mb-16">
-          <SectionHeader titleKey="services.romantic.title" subtitleKey="services.romantic.subtitle" accent="gold" t={t} />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-            {romanticPackages.map((pkg, i) => <PriceCard key={i} pkg={pkg} t={t} />)}
-          </div>
         </div>
 
         {/* Individual */}
