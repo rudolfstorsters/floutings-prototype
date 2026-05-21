@@ -19,12 +19,14 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #faf8f4;
   color: #2c3e50;
   font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
 }
 
 * {

@@ -5,16 +5,13 @@ import { Phone } from "lucide-react";
 import { useLanguage, type Lang } from "@/context/LanguageContext";
 
 const NAV_KEYS = [
-  { key: "nav.about",        href: "#about" },
-  { key: "nav.info",         href: "#floating-info" },
-  { key: "nav.benefits",     href: "#benefits" },
-  { key: "nav.services",     href: "#services" },
-  { key: "nav.products",     href: "#products" },
-  { key: "nav.gallery",      href: "#gallery" },
-  { key: "nav.testimonials", href: "#testimonials" },
-  { key: "nav.giftcard",     href: "#giftcard" },
-  { key: "nav.faq",          href: "#faq" },
-  { key: "nav.contact",      href: "#contact" },
+  { key: "nav.about",    href: "#about" },
+  { key: "nav.info",     href: "#floating-info" },
+  { key: "nav.services", href: "#services" },
+  { key: "nav.gallery",  href: "#gallery" },
+  { key: "nav.giftcard", href: "#giftcard" },
+  { key: "nav.faq",      href: "#faq" },
+  { key: "nav.contact",  href: "#contact" },
 ];
 
 const LANGS: { code: Lang; label: string }[] = [
